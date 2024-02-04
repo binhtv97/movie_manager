@@ -35,7 +35,7 @@ const FavoriesScreen = () => {
     <LayOut titileHeader="Favories List">
       <SearchBar value={search} onChangeText={setSearch} onRemove={onRemove} />
       <VirtualizedList<MovieI>
-        initialNumToRender={4}
+        initialNumToRender={5}
         renderItem={({item}) => {
           return <MovieHomeItem item={item} />;
         }}
